@@ -3,13 +3,11 @@
 ### This script creates the custom Ubuntu environment prefered for user austin.
 ### It should be run after a clean install of Ubuntu.
 
-sudo -i
-
 ## Install from existing repositories
-echo "Insatlling vim, git, unity-tweak-tool, chromium, powertop"
+echo "Insatlling vim, git, unity-tweak-tool, chromium-browser, powertop"
 apt-get update
 # Install vim, git, unity-tweak-tool, chromium, powertop
-apt-get install vim git unity-tweak-tool chromium powertop
+apt-get install vim git unity-tweak-tool chromium-browser powertop
 echo "Done"
 
 ## Install paper theme
