@@ -61,11 +61,3 @@ echo "\n## Don't forget to install the relevant graphics drivers for this system
 
 ## Exit message
 echo "\n## Done installing default packages. A restart is likely required. ##"
-echo "Do you wish to restart now? [Y/n]"
-select ans in "Yes" "No" "Y" "y" "N" "n"
-do
-    case $ans in
-        "Yes"|"Y"|"y" ) reboot; break;;
-        "No"|"N"|"n" ) break;;
-    esac
-done
