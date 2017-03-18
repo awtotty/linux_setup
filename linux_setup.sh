@@ -48,23 +48,25 @@ python download-xflux.py
 sudo python setup.py install
 echo "Done"
 
+xdg-settings set default-web-browser chromium-browser.desktop
+
 ## Install atom
 echo
 echo "## Opening Atom download link ##"
 echo
-chromium-browser https://atom.io
+xdg-open https://atom.io
 
 ## Install anaconda
 echo
 echo "##Opening Anaconda download link ##"
 echo
-chromium-browser https://www.continuum.io/downloads
+xdg-open https://www.continuum.io/downloads
 
 ## Open google photos wallpapers album
 echo
 echo "## Opening wallpapers link ##"
 echo
-chromium-browser https://photos.google.com/album/AF1QipPuyPGXlU5ihaDH5cHCH0Maa3dM7OCXHRlirfhm
+xdg-open https://photos.google.com/album/AF1QipPuyPGXlU5ihaDH5cHCH0Maa3dM7OCXHRlirfhm
 
 ## Additional drivers
 echo
