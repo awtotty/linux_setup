@@ -40,8 +40,6 @@ python download-xflux.py
 sudo python setup.py install
 echo "Done"
 # Run flux
-echo "Starting flux"
-fluxgui
 
 ## Install atom
 echo "\n## Opening Atom download link ##\n"
