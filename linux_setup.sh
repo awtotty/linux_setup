@@ -39,19 +39,18 @@ python download-xflux.py
 # Install globally
 sudo python setup.py install
 echo "Done"
-# Run flux
 
 ## Install atom
 echo "\n## Opening Atom download link ##\n"
-xdg-open https://atom.io
+chromium-browser  https://atom.io
 
 ## Install anaconda
 echo "\n##Opening Anaconda download link ##\n"
-xdg-open https://www.continuum.io/downloads
+chromium-browser  https://www.continuum.io/downloads
 
 ## Open google photos wallpapers album
 echo "\n## Opening wallpapers link ##\n"
-xdg-open https://photos.google.com/album/AF1QipPuyPGXlU5ihaDH5cHCH0Maa3dM7OCXHRlirfhm
+chromium-browser https://photos.google.com/album/AF1QipPuyPGXlU5ihaDH5cHCH0Maa3dM7OCXHRlirfhm
 
 ## Additional drivers
 echo "\n## Adding graphics-drivers via ppa ##\n"
@@ -62,10 +61,11 @@ echo "\n## Don't forget to install the relevant graphics drivers for this system
 
 ## Exit message
 echo "\n## Done installing default packages. A restart is likely required. ##"
-echo "Do you wish to restart now?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) reboot; break;;
-        No ) break;;
+echo "Do you wish to restart now? [Y/n]"
+select ans in "Yes" "No" "Y" "y" "N" "n"
+do
+    case $ans in
+        "Yes"|"Y"|"y" ) reboot; break;;
+        "No"|"N"|"n" ) break;;
     esac
 done
