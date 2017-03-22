@@ -33,6 +33,15 @@ sudo apt-get update
 sudo apt-get install spotify-client
 echo "Done"
 
+## Install caffeine
+echo 
+echo "## Installing caffeine ##"
+echo
+sudo add-apt-repository ppa:caffeine-developers/ppa
+sudo apt-get update
+sudo apt-get install caffeine
+echo "Done"
+
 ## Install flux
 echo
 echo "## Installing flux ##"
