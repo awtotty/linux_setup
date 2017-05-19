@@ -5,17 +5,20 @@
 
 ## Install from existing repositories
 echo
-echo "## Insatlling vim, git, unity-tweak-tool, chromium, powertop ##"
-echo
-apt-get update
+echo "## Insatlling vim, git, chromium, powertop ##"
+sudo apt update
 # Install vim, git, unity-tweak-tool, chromium-browser, powertop
-apt-get install vim git unity-tweak-tool chromium-browser powertop
+sudo apt install vim git chromium-browser powertop
 echo "Done"
+
+## Install gnome desktop
+echo
+echo "## Installing gnome desktop ##"
+sudo apt install ubuntu-gnome-desktop
 
 ## Install paper theme
 echo
 echo "## Installing paper theme ##"
-echo
 sudo add-apt-repository ppa:snwh/pulp
 sudo apt-get update
 sudo apt-get install paper-icon-theme
@@ -74,13 +77,11 @@ xdg-open https://www.continuum.io/downloads
 ## Open google photos wallpapers album
 echo
 echo "## Opening wallpapers link ##"
-echo
 xdg-open https://photos.google.com/album/AF1QipPuyPGXlU5ihaDH5cHCH0Maa3dM7OCXHRlirfhm
 
 ## Additional drivers
 echo
 echo "## Adding graphics-drivers via ppa ##"
-echo
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
 echo "Done"
