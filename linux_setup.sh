@@ -7,8 +7,8 @@
 echo
 echo "## Insatlling vim, git, chromium, powertop ##"
 sudo apt update
-# Install vim, git, unity-tweak-tool, chromium-browser, powertop
-sudo apt install vim git chromium-browser powertop
+# Install vim, git, docker, tmux, chromium-browser, powertop,
+sudo apt install vim git docker tmux chromium-browser powertop
 echo "Done"
 
 ## Install gnome desktop
@@ -60,6 +60,7 @@ python download-xflux.py
 sudo python setup.py install
 echo "Done"
 
+# Set default browser
 xdg-settings set default-web-browser chromium-browser.desktop
 
 ## Install atom
@@ -89,4 +90,4 @@ echo "## Don't forget to install the relevant graphics drivers for this system! 
 
 ## Exit message
 echo
-echo "## Done installing default packages. A restart is likely required. ##"
+echo "## Done installing packages. A restart is likely required. ##"
