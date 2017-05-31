@@ -88,6 +88,10 @@ sudo apt-get update
 echo "Done"
 echo "## Don't forget to install the relevant graphics drivers for this system! ##"
 
+## Upgrade
+sudo apt-get update
+sudo apt-get upgrade
+
 ## Exit message
 echo
 echo "## Done installing packages. A restart is likely required. ##"
