@@ -5,10 +5,10 @@
 
 ## Install from existing repositories
 echo
-echo "## Insatlling vim, git, chromium, powertop ##"
+echo "## Insatlling vim, git, docker, tmux, chromium, powertop, tlp ##"
 sudo apt update
 # Install vim, git, docker, tmux, chromium-browser, powertop,
-sudo apt install vim git docker tmux chromium-browser powertop
+sudo apt install vim git docker tmux chromium-browser powertop tlp
 echo "Done"
 
 ## Install gnome desktop
@@ -75,6 +75,12 @@ echo "##Opening Anaconda download link ##"
 echo
 xdg-open https://www.continuum.io/downloads
 
+## Install Steam
+echo
+echo "##Opening Steam download link ##"
+echo
+xdg-open http://store.steampowered.com/about/
+
 ## Open google photos wallpapers album
 echo
 echo "## Opening wallpapers link ##"
@@ -91,6 +97,8 @@ echo "## Don't forget to install the relevant graphics drivers for this system! 
 ## Upgrade
 sudo apt-get update
 sudo apt-get upgrade
+sudo apt-get clean
+sudo apt-get autoremove
 
 ## Exit message
 echo
