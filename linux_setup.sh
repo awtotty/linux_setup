@@ -12,9 +12,9 @@ sudo apt install vim git docker tmux chromium-browser powertop tlp
 echo "Done"
 
 ## Install gnome desktop
-echo
-echo "## Installing gnome desktop ##"
-sudo apt install ubuntu-gnome-desktop
+#echo
+#echo "## Installinggnome desktop ##"
+#sudo apt install ubuntu-gnome-desktop
 
 ## Install paper theme
 echo
